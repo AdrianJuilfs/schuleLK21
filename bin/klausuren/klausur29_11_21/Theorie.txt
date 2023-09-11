@@ -1,0 +1,24 @@
+# (a) Was versteht man unter der Deklaration einer Variablen?
+
+Eine Deklaration ist das definieren einer Variable. Also wenn man z.B. einen Zahlenwert speichern möchte, kann man dafür z.B. 
+int zahl; benutzten. int zahl; ist in diesem Fall die deklaration.
+
+
+
+
+# (b) Wie deklariert man eine Variable in Java?
+wie schon in a) beschrieben, kann man eine Variable mit int o.ä. und dem variablennamen deklarieren.
+
+
+
+
+# (c) Was versteht man unter der Initialisierung einer Variablen?
+wenn man einer Variable einen bestimmten wert gibt ist das eine Initialisierung.
+
+// My: Fast! Nicht jede neue Zuweisung eines Wertes zu einer Variablen wird als
+//     Initialisierung bezeicnet. Nur die *erstmalige* Wert-Zuweisung!
+// ==> 3 von 4 Punkten
+
+
+
+

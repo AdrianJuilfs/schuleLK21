@@ -1,0 +1,37 @@
+# Aufgabe 1: Theorie
+#
+# a) Beschreibe die drei Vorteile, die sich durch die Datenkapselung ergeben.	
+
+	1. Wartbarkeit: durch das Erstellen von Methoden wird der Code deutlich übersichtlicher und dadurch kann man bei Bedarf
+		in den Methoden leicht sachen ändern ohne viele Provleme zu haben.
+	2. Sicherheit: durch das Erstellen von Methoden kann man gewünschte Eingaben einfach kontrolieren ohne die Angst haben
+		zu müssen, dass der Anwender ungültige Eingaben macht.
+	3. Übersichtlicher: Dadurch das nur bestimmte sachen preisgegeben werden, wird es für den Entwickler der Anwendung deutlich
+	leichter den Überblick zu behalten und nur bestimmte sachen zu ändern.
+
+
+# b) Erkläre, wie sich die Verwendung der Modifier public und private bei der 
+#    Deklaration von Attributen und Methoden auswirkt.
+	
+	Wenn man ein Attribut private macht, dann ist dieser sozusagen nur für die interne Klasse sichtbar. Von außen 
+	(aka. anderen Klassen) kann man diese jedoch nicht sehen. Selbiges zählt für Methoden. 
+	Public macht genau das Gegenteil. Bei public wird der Zugriff auf die Methode oder den Attribut von außen
+	"aktiviert" und macht diese in anderen Klassen wie z.B. einer Anwendungsklasse benutzbar.
+	
+// My: Gut erklärt!
+
+
+# c) Wie werden in UML-Klassendiagrammen Attribute und Methoden als public bzw.
+#    private gekennzeichnet?
+
+	Bei UML-Klassendiagrammen werden die public Methoden und Attribute mit einem "+" und die private miteinem "-" makiert
+
+
+# d) Erkläre die Begriffe Getter und Setter.
+
+	Getter und Setter sind in der Datenkapselung sehr entscheidnde Dinge. Sie sind Methoden, welche dafür da sind interne 
+	Variabeln zu verändern (Setter) oder z.B. die Anzahl von Autos auf dem Monitor in der Anwendungsklasse zu bekommen,
+	wenn man diese z.B. darstellen möchte (Getter).
+
+
+     
