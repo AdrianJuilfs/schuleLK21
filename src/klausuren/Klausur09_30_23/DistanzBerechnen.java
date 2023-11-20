@@ -1,4 +1,5 @@
-package klausuren.Klausur_09_30_2023;
+package klausuren.Klausur09_30_23;
+
 
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
