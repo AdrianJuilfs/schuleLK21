@@ -52,6 +52,8 @@ public class ExklusivReise extends JFrame {
 	 */
 	public ExklusivReise() {
 		createGUI();
+		datenbankVerbindung();
+		reiselisteAnzeigen();
 	}
 
 	private void createGUI() {
@@ -87,7 +89,7 @@ public class ExklusivReise extends JFrame {
 		JButton btnReiseListe = new JButton("Reiseliste");
 		btnReiseListe.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				buchungslisteAnzeigen();
 			}
 		});
 		btnReiseListe.setBounds(544, 234, 101, 27);
@@ -130,7 +132,16 @@ public class ExklusivReise extends JFrame {
 		contentPane.add(lblAnzahlReisendePersonen);
 	
 	}
+
 	private void buchen() {
 		
+	}
+
+	private void datenbankVerbindung() {
+
+	}
+
+	private void reiselisteAnzeigen() {
+
 	}
 }
