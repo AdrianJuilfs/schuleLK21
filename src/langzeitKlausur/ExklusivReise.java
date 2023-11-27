@@ -133,6 +133,9 @@ public class ExklusivReise extends JFrame {
 	
 	}
 
+	private void buchungslisteAnzeigen() {
+	}
+
 	private void buchen() {
 		
 	}

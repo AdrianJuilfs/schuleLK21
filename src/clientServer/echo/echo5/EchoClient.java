@@ -1,4 +1,4 @@
-package clientServer.echo.echo2;
+package clientServer.echo.echo5;
 
 import clientServer.echo.echo2.LeseThread;
 
@@ -105,5 +105,14 @@ public class EchoClient extends JFrame {
         txtA = new JTextArea();
         txtA.setBounds(12, 95, 426, 156);
         contentPane.add(txtA);
+    }
+
+    private void senden() {
+    }
+
+    private void trennen() {
+    }
+
+    private void verbinden() {
     }
 }
