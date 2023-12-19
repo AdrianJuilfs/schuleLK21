@@ -1,18 +1,8 @@
 package clientServer.echo.echo5;
 
-import clientServer.echo.echo2.LeseThread;
-
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JTextField;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JTextArea;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+import java.awt.*;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
@@ -29,6 +19,7 @@ public class EchoClient extends JFrame {
     private OutputStreamWriter out;
     private LeseThread lt;
     private Socket s;
+    private boolean verbunden = false;
 
     /**
      * Launch the application.
@@ -108,11 +99,40 @@ public class EchoClient extends JFrame {
     }
 
     private void senden() {
+        String ou = txtNachricht.getText();
+        System.out.println(ou);
+        try {
+            out.write(ou);
+            out.flush();
+            System.out.println("Fuck uuuuuuuuuuuuuuuuuuuu");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void trennen() {
+        boolean a = true;
+
+        while (a) {
+            System.out.println("HOYYYYAAAAA");
+            a = false;
+        }
     }
 
     private void verbinden() {
+        try {
+            Socket s;
+            s = new Socket(txtServer.getText(), 22222);
+            in = new InputStreamReader(s.getInputStream(), "UTF-8");
+            out = new OutputStreamWriter(s.getOutputStream(), "UTF-8");
+            LeseThread lt = new LeseThread(in, txtA);
+            lt.start();
+            System.out.println("it werks");
+            txtVerbindung.setText("Verbunden digga");
+            txtNachricht.setEditable(true);
+            txtServer.setEditable(false);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

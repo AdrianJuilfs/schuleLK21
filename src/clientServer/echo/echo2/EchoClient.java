@@ -1,19 +1,8 @@
 package clientServer.echo.echo2;
 
-import clientServer.echo.echo2.LeseThread;
-
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JTextField;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JTextArea;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.io.IOException;
+import java.awt.*;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
@@ -105,5 +94,14 @@ public class EchoClient extends JFrame {
         txtA = new JTextArea();
         txtA.setBounds(12, 95, 426, 156);
         contentPane.add(txtA);
+    }
+
+    private void trennen() {
+    }
+
+    private void verbinden() {
+    }
+
+    private void senden() {
     }
 }
