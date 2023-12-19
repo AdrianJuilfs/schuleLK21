@@ -1,0 +1,34 @@
+# Aufgabe 2 (Normalisiereung)
+#
+# Benenne die Kriterien der drei Normalformen und überprüfe, ob die gegebene Datenbank diese
+# Kriterien erfüllt. Gehe dabei so vor, dass du zunächst die Kriterien der ersten NF beschreibst und
+# dann bewertest, ob die Datenbank diese erfüllt. Benenne alle Verstöße gegen die zuvor von dir
+# genannten Kriterien. Anschließend fährst du fort mit den speziellen Kriterien der zweiten Normalform:
+# Benenne diese und überprüfe, ob die Datenbank diese erfüllt. Alle Verstöße gegen das spezielle Kriterium
+# der 2. NF musst du benennen. Dann benennst du die Kriterien der dritten NF und überprüfst auch hier,
+# ob die gegebene Datenbank diese erfüllt. Alle Verstöße musst du benennen. Abschließend
+# bewertest du, in welcher Normalform die Datenbank insgesamt vorliegt.
+
+
+1. Normalform: ein Attribut muss atomar sein. D.h. es darf nicht weiter sinnvoll teilbar sein. 
+	Außerdem dürfen in den Attributen keine Wiederholungsgruppen vorkommen, also Attribute innerhalb eines Feldes
+	lediglich durch ein Komma getrennt sein.
+	
+	=> Voraussetzungen sind erfüllt.
+	
+2. Normalform: jedes Attribut muss, bei einer Tabelle mit zusammengesetzten Primärschlüssel (PK), von dem GANZEN PK 
+	vollfunktional abhängig sein. Das heißt, dass man Attribute der Tabelle nicht nur durch einen Teil des PK herausfinden
+	kann.
+	
+	=> Voraussetzungen sind erfüllt.
+	
+3. Normalform: Nicht PK-Attribute dürfen nicht funktional Abhängig voneinander sein. Das heißt, dass man durch 
+	nicht PK-Attribute nicht auf andere nicht PK-Attribute schließen kann. ^
+	
+	=> Voraussetzungen sind erfüllt.
+	
+Konklusion: Die Datenbank liegt in der 3. Normalform vor und weist keine Probleme auf.
+
+// My: Perfekt wäre es gewesen, wenn du bei den Kriterien der 2. bzw. 3. NF noch dazugesagt hättest dass die Erfüllung der
+//     Kriterien der niedrigeren Normalformen Voraussetzung ist. (kein Punktabzug - aber in Zukunft bitte beachten!)
+// ==> 8 von 8 Punkten
