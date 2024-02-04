@@ -1,4 +1,4 @@
-package clientServer.rechentrainer;
+package clientServer.rechentrainer.client;
 
 import javax.swing.*;
 import java.awt.*;
@@ -33,7 +33,6 @@ public class Lesethread extends Thread {
                 }
             }
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
@@ -52,6 +51,5 @@ public class Lesethread extends Thread {
             aufgabe += c + "";
             main.tfAufgabe.setText(aufgabe);
         }
-
     }
 }

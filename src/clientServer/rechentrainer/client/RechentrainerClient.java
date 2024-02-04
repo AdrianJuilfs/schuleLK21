@@ -1,4 +1,4 @@
-package clientServer.rechentrainer;
+package clientServer.rechentrainer.client;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
