@@ -1,0 +1,46 @@
+# Aufgabe 1: Theorie
+#
+# (a) Beschreibe die Unterschiede zwischen Peer-to-Peer (P2P) und Client/Server 
+#     Netzwerkarchitektur.
+		Bei Peer-to-Peer (P2P) gibt es keinen zentralen Server, bei dem die Kommunikation stattfindet. In der Theorie kann jeder Client mit jedem
+		Client gleichermaßen kommunizieren. Kurz gesagt, ein Rechner kann Server und Client gleichzeitig sein.
+
+// My: Der Satz "ein Rechner kann Server und Client gleichzeitig sein" suggeriert, dass es unterschiedliche Aufgaben (Client und Server) gibt. 
+//     Aber genau das ist NICHT der Fall. In einem P2P Netzwerk kommunizieren gleiche unter gleichen (peers). Es gibt keine Aufgabentrennung!
+//     Man spricht deshalb auch von "symmetrischer Kommunikation".
+// ==> 3 von 4 Punkten
+
+
+# (b) Auf welcher der vier Schichten im vereinfachten Netzwerk-Schichtenmodell wird 
+#     die IP-Adresse verwendet?
+		Auf der Network-Access-Schicht 
+		
+// My: Möglicherweise hast du das Richtige gemeint, aber bei so kurzen Antworten trägst du immer
+//     das Risiko. Im vereinfachten Vier-Schichten-Modell wird die unterste Schicht (Hardware) als
+//     "Network Access" Schicht bezeichnet.
+//     Richtig wäre "Netzwerk-" oder "Network-" oder auch "Internet-Schicht" gewesen.
+// ==> 0 von 4 Punkten 
+	
+
+
+# (c) Welche Funktionalität bietet TCP über das hinaus, was auch UDP bietet? Und warum
+#     wird trotzdem oft UDP statt TCP verwendet?
+
+		TCP bietet die Möglichkeit, dass möglicherweise verlorengegangene Datenpakete erneut gesendet werden und überprüft die Vollständigkeit der Datenpakete
+		automatisch. Dies hat jedoch zur Folge, dass Verzögerungen entstehen können, da es erstmal auf die verlorenen Pakete wartet und das kann u.U. 
+		sehr ungünstig werden.
+		Das ist bei UDP anders. Dadurch wird die Latenz deutlich verringert was zu einer schnelleren Verbindung und somit besseren Produktivität führt. 
+		Außerdem ist TCP ein sehr großes Protokoll, was zu Folge hat, dass ein großer Teil der Packages von TCP belegt wird und mehr Packages transferiert werden müssen
+		und dadurch dann auch mehr Daten entstehen, was die Bandbreite mehr belegt, und höhere Wahrscheinlichkeiten, dass ein Package verlorgen geht. 
+		
+// My: Ein Zusatz-Feature von TCP hast du vergessen zu erwähnen: TCP sorgt auch dafür, dass die Pakete auf der Empfängerseite wieder in der korrekten Reihenfolge 
+//     zusammengesetzt werden. 
+//     Richtig ist deine Analyse, dass durch TCP mehr Bandbreite verbraucht wird und die Kommunikation dadurch asugebremst wird.
+//     Nicht richtig ist hingegen, das die größeren Pakete (korrekt: TCP-Pakete haben einen größeren Header) für den größeren Bandbreitenbedarf
+//     und für die erhöhte Wahrscheinlichkeit von Paketverlusten verantwortlich ist.
+//     Jedes Paket hat eine gewisse Wahrscheinlichkeit verloren zu gehen. Das unterscheidet TCP nicht von UDP. Aber bei TCP werden zusätzliche Pakete übermittelt
+//     um den korrekten Empfang an den Sender zurückzumelden. Und bei Paketverlust werden Pakete erneut geschickt. Das liefert den entscheidenden Beitrag zum
+//     größeren Bandbreitenbedarf.
+//     Ein zweiter Aspekt kommt selbst dann zum Tragen, wenn die Leitung perfekt ist und keine Pakete verloren gehen. Durch die Notwendigkeit, den korrekten Empfang
+//     zu quittieren entsteht eine Verzögerung (Latenz).
+// ==> 5 von 8 Punkten
