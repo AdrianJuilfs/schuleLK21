@@ -1,20 +1,14 @@
-package schueler.lk21.adrianJuilfs.klausur240205;
+package klausuren.Q2.Q22.klausur240205;
 
-import java.awt.EventQueue;
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-import javax.swing.border.EmptyBorder;
 
 public class RelativeMasseUmrechner extends JFrame {
 
@@ -178,10 +172,10 @@ public class RelativeMasseUmrechner extends JFrame {
 						out.flush();
 					}
 				} else {
-// My: Hierhin komst du, wenn das Textfeld für die Geschwindigkeit nicht leer und das Textfeld
+// My: Hierhin kommst du, wenn das Textfeld für die Geschwindigkeit nicht leer und das Textfeld
 //     für die Ruhemasse ebenfalls nicht leer ist.
 //	   Es fehlt noch der Test, ob das Textfeld für die relativistische Masse leer ist - ansonsten
-//     darf keine Nachricht an den Server geschickt werden (statt dessen müsste der Benutzer über 
+//     darf keine Nachricht an den Server geschickt werden (stattdessen müsste der Benutzer über
 //     einen Dialog informiert werden).
 // ==> 1 Punkt Abzug (2b)
 					out.write("R" + lichtgeschwindigkeit + "#" + relmasse + "?");

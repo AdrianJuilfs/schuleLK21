@@ -1,8 +1,7 @@
-package schueler.lk21.adrianJuilfs.klausur240205;
+package klausuren.Q2.Q22.klausur240205;
 
+import javax.swing.*;
 import java.io.IOException;
-
-import javax.swing.JOptionPane;
 
 public class LeseThread extends Thread {
 
@@ -29,7 +28,7 @@ public class LeseThread extends Thread {
 //     da dein Client anschließend keine weiteren Daten vom Server liest ...
 //     break statt return wäre richtig gewesen!
 //     Nächste Zeile (und auch die folgenden Fälle) von mir entsprechend korrigiert.
-// ==> 2 Punkte Abzug (2c)
+// ==> 2-Punkte-Abzug (2c)
 //					return;
 					break;
 				case 'N':
@@ -55,7 +54,7 @@ public class LeseThread extends Thread {
 // My: Nicht von der Aufgabenstellung gefordert, aber trotzdem empfehlenswert: Ein default
 //     um unerwartete Kommunikation bzw. Kommunikationsfehler erkennen zu können.
 //     Nächste zwei Zeilen von mir eingefügt.
-// ==> kein Punktabzug - nur als Verbesserungsvorschlag gemeint.
+// → kein Punktabzug - nur als Verbesserungsvorschlag gemeint.
 				default:
 					System.out.println("DAS SOLLTE NICHT PASSIEREN");	
 				}
