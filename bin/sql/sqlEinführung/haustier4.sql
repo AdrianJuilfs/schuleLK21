@@ -440,7 +440,9 @@ WHERE beziehung_tier_id = (
 # 3B
 INSERT INTO besitzer VALUES
 (NULL, 'Frau', 'Johanna', 'Sonntag', 'Glücksweg 13', '28333', 'Bremen', NULL);
-SELECT * FROM besitzer;
+SELECT *
+FROM besitzer
+WHERE anrede = 'Herr';
 SELECT * FROM tier;
 # Übung 4, Aufgabe 4
 

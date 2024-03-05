@@ -72,8 +72,8 @@ AND projektname = 'Reorganization';
 # 2h
 # Zähle die Anzahl der Mitarbeiter im Projekt "Reorganization".
 SELECT COUNT(*)
-FROM arbeitet_an, projekt, angestellter 
-WHERE angestellter_id = arbeitet_an_angestelalter_id
+FROM arbeitet_an, projekt, angestellter
+WHERE angestellter_id = arbeitet_an_angestellter_id
 AND (SELECT projekt_id FROM projekt WHERE projektname = 'Reorganization') = arbeitet_an_projekt_id;
 
 # 2i
